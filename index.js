@@ -6,7 +6,7 @@ const { GraphQLClient } = require('graphql-request');
 const host = 'https://bim-portal-prod.modeloapp.com';
 const [appToken, modelPath] = process.argv.splice(2);
 
-(async (appToken, modelPath) => {
+(async () => {
     // 1. decode username & password from apiKey
     // 2. get graphql token by login api
     // 3. call uploadModel API get upload url
@@ -72,4 +72,4 @@ const [appToken, modelPath] = process.argv.splice(2);
             }`;
     const successData = await gql.request(uploadModelSuccessMutation);
     console.log('upload success: ', successData);
-})(appToken, modelPath);
+})();
