@@ -1,7 +1,7 @@
 {
-  "name": "gale_code",
+  "name": "upload_model",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a script to upload a model",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

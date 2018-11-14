@@ -2,10 +2,9 @@ const axios = require('axios');
 const path = require('path');
 const fs = require('fs');
 const { GraphQLClient } = require('graphql-request');
-const {appToken, modelPath} = require('./config.json');
 
-const host = 'https://bim-portal-dev.modeloapp.com';
-// const [appToken, modelPath] = process.argv.splice(2);
+const host = 'https://bim-portal-prod.modeloapp.com';
+const [appToken, modelPath] = process.argv.splice(2);
 
 (async (appToken, modelPath) => {
     // 1. decode username & password from apiKey
