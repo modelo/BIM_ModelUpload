@@ -4,5 +4,5 @@ npm install
 ```
 ## use your appToken and modelPath to upload
 ```bash
-node index appToken modelPath
+node index.js appToken modelPath
 ```
